@@ -1,0 +1,139 @@
+/* RESETS */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLING */
+
+body {
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts-title {
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+}
+
+/* LAYOUT  */
+
+.contacts-title {
+  text-align: center;
+  padding: 1.5em 0 0.5em 0;
+}
+
+.page-container {
+  width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+}
+
+.names-panel {
+  background-color: #f7c59f;
+  height: 100vh;
+}
+
+.contact-details-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1e5ee;
+  width: 600px;
+  border-radius: 10px;
+  padding: 3em;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-full-name {
+  font-size: 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-wrapper {
+  flex-direction: column;
+}
+
+.address-wrapper p {
+  margin: 0;
+}
+.address-wrapper i {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.tel-number-wrapper i {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+.main-page-avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0 0.5em 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+}
+
+.contact-name:hover {
+  background-color: #2a324b;
+  color: #fff;
+}
+
+.contact-name.active {
+  background-color: lightcoral;
+  color: #fff;
+  font-size: 1.3em;
+}

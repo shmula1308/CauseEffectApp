@@ -4,51 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
     <title>CauseEffect App</title>
   </head>
   <body>
-    <div class="names-panel">
-      <h3 class="contacts-title">contacts</h3>
-      <ul class="contact-list">
-        <li class="contact-name"><img src="" class="avatar" />Ben PLazzer</li>
-        <li class="contact-name">
-          <img src="" class="avatar" />Andrew Nowrojee
-        </li>
-        <li class="contact-name">
-          <img src="" class="avatar" />Lester Francois
-        </li>
-        <li class="contact-name"><img src="" class="avatar" />John Evagora</li>
-        <li class="contact-name"><img src="" class="avatar" />Laurie Nun</li>
-        <li class="contact-name"><img src="" class="avatar" />Kitty Green</li>
-        <li class="contact-name"><img src="" class="avatar" />Leah Pullen</li>
-        <li class="contact-name"><img src="" class="avatar" />Dan Hoffmann</li>
-        <li class="contact-name">
-          <img src="" class="avatar" />Haruo Nakamura
-        </li>
-        <li class="contact-name"><img src="" class="avatar" />Michael Paul</li>
-      </ul>
-    </div>
-    <div class="contact-details-panel">
-      <header class="contact-header">
-        <img src="" alt="" class="avatar" />
-        <p class="contact-name"></p>
-      </header>
-      <main>
-        <div class="tel-number-wrapper">
-          <i></i>
-          <p class="tel-number"></p>
+    <div class="page-container">
+      <div class="names-panel">
+        <h3 class="contacts-title">contacts</h3>
+        <ul class="contact-list">
+          <li class="contact-name active" data-name="Ben Plazzer">
+            <img src="images/7.jpg" class="avatar" /><span class="name"
+              >Ben Plazzer</span
+            >
+          </li>
+          <li class="contact-name" data-name="Andrew Nowrojee">
+            <img src="images/6.jpg" class="avatar" /><span class="name"
+              >Andrew Nowrojee</span
+            >
+          </li>
+          <li class="contact-name" data-name="Lester Francois">
+            <img src="images/5.jpg" class="avatar" /><span class="name"
+              >Lester Francois</span
+            >
+          </li>
+          <li class="contact-name" data-name="John Evagora">
+            <img src="images/4.jpg" class="avatar" /><span class="name"
+              >John Evagora</span
+            >
+          </li>
+          <li class="contact-name" data-name="Laurie Nun">
+            <img src="images/1.jpg" class="avatar" /><span class="name"
+              >Laurie Nun</span
+            >
+          </li>
+          <li class="contact-name" data-name="Kitty Green">
+            <img src="images/2.jpg" class="avatar" /><span class="name"
+              >Kitty Green</span
+            >
+          </li>
+          <li class="contact-name" data-name="Leah Pullen">
+            <img src="images/3.jpg" class="avatar" /><span class="name"
+              >Leah Pullen</span
+            >
+          </li>
+          <li class="contact-name" data-name="Dan Hoffmann">
+            <img src="images/8.jpg" class="avatar" /><span class="name"
+              >Dan Hoffmann</span
+            >
+          </li>
+          <li class="contact-name" data-name="Haruo Nakamura">
+            <img src="images/9.jpg" class="avatar" /><span class="name"
+              >Haruo Nakamura</span
+            >
+          </li>
+          <li class="contact-name" data-name="Michael Paul">
+            <img src="images/10.jpg" class="avatar" /><span class="name"
+              >Michael Paul</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="contact-details-panel">
+        <div class="contact-card">
+          <header class="contact-header">
+            <img src="images/7.jpg" alt="" class="avatar main-page-avatar" />
+            <p class="contact-full-name">Ben Plazzer</p>
+          </header>
+          <main>
+            <div class="tel-number-wrapper flex">
+              <i class="fas fa-phone-alt"></i>
+              <p class="tel-number">+356 7856 45342</p>
+            </div>
+            <div class="address-wrapper flex">
+              <i class="fas fa-map-marker-alt"></i>
+              <p class="street">Hyzri Talla 14/5</p>
+              <p class="city">Prishtine</p>
+              <p class="state">Komuna e Decanit</p>
+              <p class="country">Republic of Kosovo</p>
+            </div>
+            <div class="birthday-wrapper flex">
+              <p class="birthday">DOB: 27/10/1958</p>
+            </div>
+          </main>
         </div>
-        <address class="address-wrapper">
-          <i></i>
-          <p class="street"></p>
-          <p class="city"></p>
-          <p class="state"></p>
-          <p class="country"></p>
-        </address>
-        <div class="birthday-wrapper">
-          <p class="birthday"></p>
-        </div>
-      </main>
+      </div>
     </div>
   </body>
 </html>
